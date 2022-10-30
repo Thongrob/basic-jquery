@@ -48,14 +48,19 @@
 //Fadein Fade out
 $(document).ready(function () {
  $('#btn').click(function(){
-  $('#div1').fadeIn()
+  $('#div1').show()
  })
+
  $('#btn').click(function(){
-  $('div').animate({
+  $('#div1').animate({
     left: '250px',
     width: '150px',
     height: '150px',
   })
+ })
+
+ $('#stop').click(function () {
+  $('#div2').toggle()
  })
 });
 
